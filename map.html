@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Карта туалетов ГК</title>
+    <meta name="description" content="Сайт посвящён туалетам главного корпуса">
+    <meta name="keywords" content="итмо, туалет, туалеты, главный корпус">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/mapstyles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"/>
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="js/preloader.js"></script>
+    <script defer src="js/active-page.js"></script>
+    <script defer src="js/outline.js"></script>
+    <script defer src="js/load-time.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script defer src="js/map-descriptor.js"></script>
+</head>
+
+<body>
+<div id="preloader"></div>
+<div class="screen">
+    <div class="wrapper">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="logo" class="logo">
+            </a>
+            <div class="header-container">
+                <h1 class="website-name">Карта туалетов главного корпуса</h1>
+                <div class="header-nav">
+                    <a href="index.html" class="nav-item">Главная страница</a>
+                    <a href="map.html" class="nav-item">Карта туалетов</a>
+                    <a href="rules.html" class="nav-item">Правила пользования</a>
+                    <a href="secret.html" class="nav-item">Секретная кнопка</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="map-content-container">
+                <h3>Всё, что коричневого цвета - нам надо.</h3>
+                <div class="map">
+                    <div id="tooltip" style="position: absolute; display: none;"><img
+                            src="images/toilet.jpg" alt="" height="100" width="100"></div>
+                    <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1042 1472.9">
+
+                        <path id="part1" d="m 938.34707,1203.9298 v 54.2005  l 27.10028,-1.355 -0.67751,-53.523 z"/>
+
+                        <path id="part2"
+                              d="m 178.86182,510.84021 -9.48509,89.43091 42.00543,2.71003 6.77507,-90.78593 z"/>
+                        <path id="part3" d="m 403.79412,367.20875 -2.71003,18.97019 37.74378,-3.52199 1.43721,-10.18023
+z"/>
+                    </svg>
+                </div>
+                <div class="content__hidden">
+                    Упси! кажется, что наша карта только для биг боев
+                </div>
+                <img src="images/3floor-Model_page-0001.jpg" alt="">
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <div id="load-time"></div>
+        <b>© Krugarrr, 2023</b>
+    </footer>
+</div>
+</body>
+</html>
