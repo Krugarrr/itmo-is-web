@@ -16,7 +16,7 @@
     <script defer src="js/preloader.js"></script>
 </head>
 <body>
-<div id="preloader"></div>
+<div class="preloader"></div>
 <div class="screen">
     <div class="wrapper">
         <header>
@@ -25,62 +25,57 @@
             </a>
             <div class="header-container">
                 <h1 class="website-name">Карта туалетов главного корпуса</h1>
-                <div class="header-nav">
-                    <a href="index.html" class="nav-item">Главная страница</a>
-                    <a href="map.html" class="nav-item">Карта туалетов</a>
-                    <a href="rules.html" class="nav-item">Правила пользования</a>
-                    <a href="secret.html" class="nav-item">Секретная кнопка</a>
-                </div>
+                <nav class="top-nav">
+                    <a href="index.html" class="top-nav__item">Главная страница</a>
+                    <a href="map.html" class="top-nav__item">Карта туалетов</a>
+                    <a href="rules.html" class="top-nav__item">Правила пользования</a>
+                    <a href="secret.html" class="top-nav__item">Секретная кнопка</a>
+                </nav>
             </div>
         </header>
 
         <main>
-            <div class="content-container">
-                <h2>Правила посещения туалета!</h2>
+            <div class="content">
+                <h2 class="content__title">Правила посещения туалета!</h2>
                 <article>
                     Перво-наперво, вот вам формула известной субстанции:
                     <code>C<sub>9</sub>H<sub>9</sub>N</code>
                 </article>
-                <div class="content-container__table">
-                    <div class="table__name">
-                        <h2>Рейтинг туалетов корпусов</h2>
-                    </div>
-                    <div class="table-content">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th data-type="text-short">Название <span class="resize-handle"></span></th>
-                                <th data-type="text-short">Адрес<span class="resize-handle"></span></th>
-                                <th data-type="text-short">Рейтинг<span class="resize-handle"></span></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Главный корпус</td>
-                                <td>Кронверкский проспект 49</td>
-                                <td>4.9</td>
-                            </tr>
-                            <tr>
-                                <td>Ломо</td>
-                                <td>Ломоносова 9</td>
-                                <td>4.4</td>
-                            </tr>
-                            <tr>
-                                <td>Биржа</td>
-                                <td>Биржевая линия 17</td>
-                                <td>4.0</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <iframe src="https://brodude.ru/pravila-povedeniya-v-obshhestvennyx-tualetax/?ysclid=lmkm6z7f1s253543789"></iframe>
+                <h2 class="content-table__title">Рейтинг туалетов корпусов</h2>
+                <table class="content-table__toilet-rating">
+                    <thead class="content-table__header">
+                    <tr class="content-table__row">
+                        <th class="content-table__header-item" data-type="text-short">Название <span class="resize-handle"></span></th>
+                        <th class="content-table__header-item" data-type="text-short">Адрес<span class="resize-handle"></span></th>
+                        <th class="content-table__header-item" data-type="text-short">Рейтинг<span class="resize-handle"></span></th>
+                    </tr>
+                    </thead>
+                    <tbody class="content-table__body">
+                    <tr class="content-table__row">
+                        <td class="content-table__body-item">Главный корпус</td>
+                        <td class="content-table__body-item">Кронверкский проспект 49</td>
+                        <td class="content-table__body-item">4.9</td>
+                    </tr>
+                    <tr class="content-table__row">
+                        <td class="content-table__body-item">Ломо</td>
+                        <td class="content-table__body-item">Ломоносова 9</td>
+                        <td class="content-table__body-item">4.4</td>
+                    </tr>
+                    <tr class="content-table__row">
+                        <td class="content-table__body-item">Биржа</td>
+                        <td class="content-table__body-item">Биржевая линия 17</td>
+                        <td class="content-table__body-item">4.0</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <iframe class="content__rules"
+                        src="https://brodude.ru/pravila-povedeniya-v-obshhestvennyx-tualetax/?ysclid=lmkm6z7f1s253543789"></iframe>
             </div>
         </main>
     </div>
 
     <footer>
-        <div id="load-time">
+        <div class="load-time">
         </div>
         <b>© Krugarrr, 2023</b>
     </footer>

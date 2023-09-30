@@ -1,5 +1,5 @@
 let current = document.location.href
-document.querySelectorAll('.nav-item')
+document.querySelectorAll('.top-nav__item')
     .forEach(link => {
     if (link.href.includes(current)) {
         link.classList.add('active')

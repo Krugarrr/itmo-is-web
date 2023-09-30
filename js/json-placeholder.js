@@ -3,17 +3,16 @@ function getRandomInt(max) {
 }
 
 async function printRandomPost() {
-    let title = document.getElementById("title");
-    let content = document.getElementById("content");
+    let title = document.getElementsByClassName("content__title");
+    let content = document.getElementsByClassName("content__json-text");
     let randomPostNumber = getRandomInt(100);
-    const downloadBtn = document.getElementById('content')
     try {
         let response;
         const call = await fetch(`https://jsonplaceholder.typicode.com/posts/${randomPostNumber}`).then((call) => call.json())
             .then((json) => {
                 response = json;
-                title.appendChild(document.createTextNode(json.title));
-                content.appendChild(document.createTextNode(json.body));
+                title[0].appendChild(document.createTextNode(json.title));
+                content[0].appendChild(document.createTextNode(json.body));
             });
         const result = await response;
         console.log("Success", result);
